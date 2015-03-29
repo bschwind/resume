@@ -1,0 +1,108 @@
+html,body {
+	margin: 0;
+	padding: 0;
+/*    height: 100%;
+    width: 100%;*/
+}
+
+* {
+	/*Debug drawing*/
+	/*border: 1px solid red;*/
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+p {
+	margin: 0;
+	font-weight: 300;
+}
+
+li {
+	font-weight: 300;
+}
+
+#resume-page {
+	display: flex;
+	flex-direction: column;
+	width: 8.5in;
+    box-shadow: 0px 0px 40px #888888;
+    background-color: white;
+
+    margin: 0.25in;
+    padding: 0.75in;
+
+	/*Raleway
+	Poiret One*/
+    font-family: 'Lato', sans-serif;
+}
+
+.name-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 2em;
+}
+
+.contact-row {
+	align-self: center;
+}
+
+.content-bar {
+	background-color: rgb(88, 141, 255);
+	height: 5px;
+	width: 75%;
+	align-self: center;
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+}
+
+.content-section {
+	color: rgb(88, 141, 255);
+	margin-top: 20px;
+	margin: 0;
+}
+
+.temporal-entry {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5px;
+}
+
+.header-row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.item-time {
+	display: flex;
+	width: 20%;
+}
+
+.item-details {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+.item-details > h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.item-details > ul {
+	margin: 0;
+}
+
+.personal-project {
+	font-weight: bold;
+}
+
+.skill-item {
+	font-weight: bold;
+}
