@@ -21,23 +21,6 @@
 				<div class="item-time">
 					<div class="content-bar"></div>
 				</div>
-				<h2 class="content-section item-details">Education</h2>
-			</div>
-			<div class="temporal-entry">
-				<span class="item-time">2009 - 2012</span>
-				<div class="item-details">
-					<h3>Furman University</h3>
-					<ul>
-						<li>Bachelor of Science, Computer Science - Mathematics</li>
-						<li>Major GPA: 3.70</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="header-row">
-				<div class="item-time">
-					<div class="content-bar"></div>
-				</div>
 				<h2 class="content-section item-details">Experience</h2>
 			</div>
 
@@ -47,9 +30,10 @@
 					<h3>Software Engineer, Givery Inc.</h3>
 					<ul>
 						<li>Implemented a full application backend which included an HTTP API, chat server, image uploading/resizing service, video converting pipeline, and mobile push notification support</li>
-						<li>Maintained the AWS infrastructure to run these services (EC2, RDS, S3, SQS, SNS, Elastic Transcoder, etc.)</li>
-						<li>Wrote a deployment pipeline which glued Packer (AMI baking) and Terraform (infrastructure management) together for automated zero-downtime deployments on git commits</li>
-						<li>Created a docker-compose based development environment for easy, consistent, and swift development</li>
+						<li>Designed and delivered a full deployment pipeline and server infrastructure, going from source code to live running apps in an auto-scaled and monitored environment</li>
+						<li>Created a docker-compose based development environment for easy, consistent, and quick development</li>
+						<li>Wrote a custom WebSocket server in Go to run arbitrary user code for our programmer evaluation service</li>
+						<li>Created and currently maintain all infrastructure related to the previously mentioned service</li>
 					</ul>
 				</div>
 			</div>
@@ -57,12 +41,9 @@
 			<div class="temporal-entry">
 				<span class="item-time">2013 – 2015</span>
 				<div class="item-details">
-					<h3>Software Engineer, BenefitFocus</h3>
+					<h3>Software Engineer, Benefitfocus</h3>
 					<ul>
 						<li>Wrote a flat file parser to parse delimited, fixed-length, and multi-record file formats into XML</li>
-						<li>Implemented a custom import process for loading Medicare Advantage data into our application</li>
-						<li>Implemented an event-driven email notification system for HR administrators to define messages to send to employees upon specific events</li>
-						<li>Implemented a plan rate importing system to save Benefitfocus employees the effort required to manually input plan rates received from clients</li>
 						<li>Frequent contributions and bugfixes to a web app of over 4.5 million lines of Java code</li>
 					</ul>
 				</div>
@@ -93,6 +74,23 @@
 				<div class="item-time">
 					<div class="content-bar"></div>
 				</div>
+				<h2 class="content-section item-details">Education</h2>
+			</div>
+			<div class="temporal-entry">
+				<span class="item-time">2009 - 2012</span>
+				<div class="item-details">
+					<h3>Furman University</h3>
+					<ul>
+						<li>Bachelor of Science, Computer Science - Mathematics</li>
+						<li>Major GPA: 3.70</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header-row">
+				<div class="item-time">
+					<div class="content-bar"></div>
+				</div>
 				<h2 class="content-section item-details">Personal Projects</h2>
 			</div>
 			<div class="temporal-entry">
@@ -100,29 +98,27 @@
 				<div class="item-details">
 					<h3></h3>
 
+					<span class="personal-project">A/C Remote Control</span>
+					<ul>
+						<li>A device to allow people to turn on their heat or cooling remotely to make their home comfortable before returning</li>
+						<li>Designed and hand assembled a PCB which can read temperature/pressure/humidity/ambient light, send and receive infrared signals, and communicate over BLE and WiFi</li>
+						<li>Wrote C firmware to control the device, including WiFi initialization over a secure BLE channel, over-the-air firmware updates, MQTT communication, and mimicking of a remote control</li>
+						<li>Currently implementing a mobile app for iOS and Android using the Flutter framework</li>
+					</ul>
+
 					<span class="personal-project">GFK</span>
 					<ul>
 						<li>A cross-platform, C++ game framework to author networked 3D games on Mac, Linux, Windows, Android, and iOS</li>
 					</ul>
 
+					<span class="personal-project">Yoga-rs</span>
+					<ul>
+						<li>Rust bindings to Facebook's Yoga library, a Flexbox layout engine</li>
+					</ul>
+
 					<span class="personal-project">Sumie</span>
 					<ul>
 						<li>A small HTML5 Canvas app for making simple ink paintings</li>
-					</ul>
-
-					<span class="personal-project">A/C Remote Control</span>
-					<ul>
-						<li>I reverse-engineered my A/C remote and connected it to the Internet to heat and cool my apartment before coming home</li>
-					</ul>
-
-					<span class="personal-project">ESP8266 Docker Build Environment</span>
-					<ul>
-						<li>An experiment in using Docker to create a complete compile/flashing environment for the ESP8266 microcontroller</li>
-					</ul>
-
-					<span class="personal-project">MQTT Broker</span>
-					<ul>
-						<li>I'm going through the MQTT spec and implementing it in Rust to learn the popular Mio library</li>
 					</ul>
 				</div>
 			</div>
@@ -140,22 +136,17 @@
 
 					<span class="skill-item">Languages</span>
 					<ul>
-						<li>Java, C#, JavaScript, Clojure(Script), Rust, C/C++, SQL, GLSL, HTML, CSS</li>
+						<li>Rust, Go, C, Java, C#, Scala, JavaScript, Clojure(Script), SQL, HTML, CSS</li>
 					</ul>
 
 					<span class="skill-item">Tools</span>
 					<ul>
-						<li>Git, Docker, Redis, shell scripting, Terraform, Packer, Vagrant, Ansible, CloudFlare, CMake, GraphViz, GIMP, various CI servers, Chrome Dev Tools, Wireshark</li>
-					</ul>
-
-					<span class="skill-item">Platforms and Operating Systems</span>
-					<ul>
-						<li>AWS, OS X, Windows, Linux, Android, Arduino, FreeRTOS (on the ESP8266 microcontroller)</li>
+						<li>Git, Docker, shell scripting, Terraform, Packer, Ansible, GraphViz, GIMP, various CI servers, Wireshark</li>
 					</ul>
 
 					<span class="skill-item">Currently Learning</span>
 					<ul>
-						<li>Clojure(Script), Rust, FreeRTOS, Electronics and Hardware</li>
+						<li>Electronics and Hardware</li>
 					</ul>
 				</div>
 			</div>
